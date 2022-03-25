@@ -1,0 +1,34 @@
+/*
+04 / Elements
+Unclassed HTML elements (type selectors: a {}, blockquote {}, address {}, etc.).
+*/
+@import "02tools";
+@import "01settings";
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: normal;
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,28 @@
+/*
+
+01 / Settings (no output)
+Global variables, site-wide settings, colors definition, config, etc.. 
+Accessible from anywhere.
+ 
+*/
+
+@use "sass:color";
+
+/* Tipografia */
+
+$font-family-sans-serif: 'Helvetica', 'Arial', sans-serif;
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+/* Colors */
+
+$principal: #004244;
+$secundari: #37ffca;
+$text: white;
+$bg: color.scale($secundari, $lightness: 70%);
+
+/* widths */
+
+$mqMinWidth: 420px;
+$smartphoneMax: 480px;
+$tabletMax: 767px;
+$desktopMaz: 1280px;

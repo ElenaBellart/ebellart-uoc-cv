@@ -1,0 +1,94 @@
+/*
+06 / Components
+Designed components. Discrete, complete, recognisable pieces of UI (e.g. .mosaic {}).
+We shouldn’t find any selectors with a lower specificity than one class. 
+*/
+
+@import "01settings";
+@import "02tools";
+
+/* icons i buttons */ 
+.icon-social {
+  padding: 0 5px;
+  color: $principal;
+}
+
+.icon-social:hover {
+  color: $secundari;
+}
+
+button {
+  align-self: center;
+  width: auto;
+  padding: 10px;
+  color: $text;
+  cursor: pointer;
+  background-color: $principal;
+  border: 0;
+  border-radius: 5%;
+  
+  &:hover {
+    background-color: $secundari;
+  }
+}
+
+/* HEADER */ 
+header {
+  gap: 15px;
+  padding: 3rem;
+  margin: 0;
+
+  @include align-center;
+
+  text-align: center;
+  background-color: $text;
+
+  .header-intro {
+    img {
+      width: 50%;
+      height: auto;
+      border-radius: 50%;
+
+      @include tablet {
+        max-width: 250px;
+      }
+    }
+  }
+
+  .header-info {
+    font-weight: 300;
+  }
+}
+ 
+/* Footer */
+footer {
+  padding: 1.5rem;
+  font-size:1rem;
+  color: $text;
+  text-align: center;
+  background-color: $principal;
+}
+ 
+/* SKILLS */
+.skills {
+  text-align: left;
+
+  .skills-barra {
+    padding: 10px 0;
+  }
+}
+
+.html {
+  width: 90%;
+  background-color: $principal;
+}
+
+.css {
+  width: 80%;
+  background-color: $principal;
+}
+
+.ps {
+  width: 65%;
+  background-color: $principal;
+} 

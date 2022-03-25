@@ -1,0 +1,59 @@
+/*
+05 / Objects (namespaced)
+OOCSS methodology concept.
+Objects, abstractions, and “cosmetic-free (or basic)” design patterns (e.g. .o-block {}, .o-media {}).
+*/
+
+.container {
+  padding: 20px 40px;
+  margin: 0;
+  background-color: $bg;
+
+  @include tablet {
+    padding: 20px 15%;
+  }
+  @include desktop {
+    padding: 25px 25%;
+  }
+  @include huge {
+    padding: 25px 30%;
+  }
+}
+
+.container:nth-child(even) {
+  background-color: $text;
+}
+
+.container-item {
+  padding: 20px 40px;
+  margin: 0;
+}
+
+.titol-icon {
+  display: flex;
+  gap: 15px;
+}
+
+.container-item-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  @include align-end;
+
+  .carrec {
+    display: flex;
+    flex:1;
+    justify-content: left;
+    font-weight: 200;
+  }
+
+  .any {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.descripcio {
+  padding-top: 10px;
+}

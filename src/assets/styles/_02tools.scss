@@ -1,0 +1,37 @@
+/*
+02 / Tools (no output)
+Site-wide mixins and functions.
+Accessible from anywhere, any mixin or function that does not need accessing globally 
+should belong in the partial to which it relates.
+*/
+
+@import "01settings";
+
+/* mixins pel flex */
+@mixin align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin align-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Mixins per media querys */
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin huge {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
